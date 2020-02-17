@@ -62,10 +62,11 @@ body{
 /* Navbar section */
 
 .navbar{
-    position: sticky;
+    position: fixed;
     display: flex;
     background: rgba(166, 236, 241, 0.863);
     height: 10vh;
+    width: 100%;
     align-items: center;
     border-bottom: 5px solid rgb(79, 150, 173);
 }
@@ -114,7 +115,7 @@ body{
 
 .main-content{
     flex: 1;
-    padding: 100px 0px 0px 50px;
+    padding: 0px 0px 0px 50px;
     
 }
 
@@ -133,7 +134,7 @@ body{
 }
 
 .btn-group{
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-decoration: none;
 
 }
@@ -173,7 +174,7 @@ body{
 }
 
 .main-img{
-    flex: 1;
+    flex: 2;
 }
 
 .img{
@@ -184,7 +185,7 @@ body{
     position: absolute;
     top: 0%;
     left: 0%;
-    height: 80%;
+    height: 70%;
     opacity: 0.5;
     z-index: -1;
 }
@@ -193,7 +194,7 @@ body{
     position: absolute;
     top: 20%;
     left: 10%;
-    height: 80%;
+    height: 60%;
     opacity: 0.5;
     z-index: -1;
 }
@@ -204,4 +205,73 @@ body{
     height: 50%;
     left: 0%;
     z-index: -1;
+}
+
+/* End of main section */
+
+/* Blog section */
+
+.blog{
+    width: 80%;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.blog-content{
+    padding: 20px 0;
+}
+
+.blog-title{
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    color: rgb(27, 110, 143);
+}
+
+.blog-para{
+    padding: 10px 0;
+}
+
+
+
+
+
+/* screen resizing */
+
+@media screen and (max-width:1024px){
+    .header-section{
+        flex-direction: column;
+        margin: 10px ;
+    }
+    .navbar{
+        flex-direction: row;
+    }
+    .nav-links{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-title{
+        font-size: 60px;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+    .main-text{
+        text-align: center;
+    }
+    .btn-group{
+        text-align: center;
+    }
+    .main-img{
+        margin-top: 70px;
+        width: 100%;
+        text-align: center;
+    }
+    .big-circle{
+        width: 80%;
+    }
 }
