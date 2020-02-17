@@ -9,6 +9,9 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* Header section */
+
 .header-section{
     display: flex;
     width: 90%;
@@ -35,6 +38,7 @@ body{
 .mail{
     flex: 2;
     justify-content: center;
+    cursor: pointer;
 }
 .mail i{
     margin-right: 10px;
@@ -49,4 +53,155 @@ body{
 .social-icons a{
     margin-right: 10px;
     color: black;
+}
+
+/* End of header */
+
+
+
+/* Navbar section */
+
+.navbar{
+    position: sticky;
+    display: flex;
+    background: rgba(166, 236, 241, 0.863);
+    height: 10vh;
+    align-items: center;
+    border-bottom: 5px solid rgb(79, 150, 173);
+}
+
+.navbar,
+.nav-links,
+.nav-link{
+    display: flex;
+}
+
+.logo{
+    flex: 1;
+    width: 220px;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.nav-links{
+    flex: 2;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(145, 153, 160);
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: rgb(79, 150, 173);
+}
+
+/* End of navbar */
+
+/* Main section */
+
+.main{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main-content{
+    flex: 1;
+    padding: 100px 0px 0px 50px;
+    
+}
+
+.main-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(209, 159, 159);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.main-text{
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(148, 148, 148);
+}
+
+.btn-group{
+    margin-top: 2rem;
+    text-decoration: none;
+
+}
+
+.btn-blog{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    background: white;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.btn-blog:hover{
+    border: 2px solid blueviolet;
+    color: white;
+    background: blueviolet;
+}
+
+.btn-portfolio{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    background: blueviolet;
+    border: 2px solid blueviolet;
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn-portfolio:hover{
+    background: white;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+}
+
+.main-img{
+    flex: 1;
+}
+
+.img{
+    width: 90%;
+}
+
+.big-circle{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 80%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.mid-circle{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 80%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.small-circle{
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    left: 0%;
+    z-index: -1;
 }
