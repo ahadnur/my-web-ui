@@ -65,7 +65,7 @@ body{
     position: fixed;
     display: flex;
     background: rgba(166, 236, 241, 0.863);
-    height: 10vh;
+    height: 8vh;
     width: 100%;
     align-items: center;
     border-bottom: 5px solid rgb(79, 150, 173);
@@ -79,8 +79,8 @@ body{
 
 .logo{
     flex: 1;
-    width: 220px;
-    padding-left: 1rem;
+    width: 150px;
+    padding-left: 2rem;
     cursor: pointer;
 }
 
@@ -270,6 +270,7 @@ body{
         margin-top: 70px;
         width: 100%;
         text-align: center;
+        z-index: -1;
     }
     .big-circle{
         width: 80%;
